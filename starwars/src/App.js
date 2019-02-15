@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Container from "./components/Container";
+
 class App extends Component {
   constructor() {
     super();
@@ -33,6 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Container traits={this.state.starwarsChars} />
       </div>
     );
   }

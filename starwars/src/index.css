@@ -5,3 +5,9 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+h1 {
+  font-family: 'VT323', monospace;
+  font-size: 4rem;
+  font-stretch: ultra-expanded;
+}
