@@ -16,8 +16,12 @@ function Traits(props) {
         lb
       </p>
       <p>
-        D.O.B <i className="fa fa-chevron-circle-right" />{" "}
+        Born <i className="fa fa-chevron-circle-right" />{" "}
         {props.traits.birth_year}
+      </p>
+      <p>
+        Gender <i className="fa fa-chevron-circle-right" />{" "}
+        {props.traits.gender}
       </p>
     </div>
   );
