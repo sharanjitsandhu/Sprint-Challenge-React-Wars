@@ -5,7 +5,7 @@ function Characters(props) {
   return (
     <div>
       {props.starwarsChars.map(traits => (
-        <Traits traits={traits} key={traits.id} />
+        <Traits traits={traits} key={traits.name} />
       ))}
     </div>
   );
