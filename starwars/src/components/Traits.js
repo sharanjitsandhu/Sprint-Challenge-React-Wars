@@ -1,13 +1,24 @@
 import React from "react";
+import "./StarWars.css";
 
 function Traits(props) {
   console.log(props);
   return (
-    <div>
+    <div className="traits-wrapper">
       <h3>{props.traits.name}</h3>
-      <p>Height {props.traits.height}</p>
-      <p>Weight {props.traits.mass}</p>
-      <p>Birth Year {props.traits.mass}</p>
+      <p>
+        Height <i className="fa fa-chevron-circle-right" />{" "}
+        {props.traits.height}
+        cm
+      </p>
+      <p>
+        Weight <i className="fa fa-chevron-circle-right" /> {props.traits.mass}
+        lb
+      </p>
+      <p>
+        D.O.B <i className="fa fa-chevron-circle-right" />{" "}
+        {props.traits.birth_year}
+      </p>
     </div>
   );
 }
